@@ -499,7 +499,8 @@ def main():
                 try:
                     if y[2] != "":
                         sys.stderr.write("Error: " + "Incorrect input format" + '\n')
-                    del class_list[street]
+                    else:
+                        del class_list[street]
                 except KeyError:
                     sys.stderr.write("Error: " + street + " Street not added or has been removed already!!" + '\n')
             except UnboundLocalError:
